@@ -1,5 +1,5 @@
 
-![](banner.png)
+![](Images/banner.png)
 
 Welcome this challenging playground for those how love coding. Inspired by [programming-challenges.com](http://programming-challenges.com), [SwiftAlgorithmsClassroom](https://github.com/gmertk/SwiftAlgorithmsClassroom) and the [Fellowswift](http://fellowswift.com) community.
 
