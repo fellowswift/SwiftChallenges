@@ -1,7 +1,7 @@
 
 ![](banner.png)
 
-Welcome this challenging playground for those how love coding challenges. Inspired by [programming-challenges.com](http://programming-challenges.com), [SwiftAlgorithmsClassroom](https://github.com/gmertk/SwiftAlgorithmsClassroom) and the [Fellowswift](http://fellowswift.com) community.
+Welcome this challenging playground for those how love coding. Inspired by [programming-challenges.com](http://programming-challenges.com), [SwiftAlgorithmsClassroom](https://github.com/gmertk/SwiftAlgorithmsClassroom) and the [Fellowswift](http://fellowswift.com) community.
 
 Periodically a programming challenge will be published in this repo as a challenge issue. You should fork this repository and send a pull request as your solution to the issue. We will do peer-review by commenting others' solutions. We will learn and teach all together.
 
