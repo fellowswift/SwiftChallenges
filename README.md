@@ -7,7 +7,7 @@ Periodically a programming challenge will be published in this repo as a pending
 
 Please remember that you should not make any assumption in the challenges. Your solution should deal with negative numbers, decimals, wrong inputs, etc... unless it is indicated like that in the problem. In case of doubt please send a comment to the corresponding issue.
 
-And please remember that this is a respectful team. Review and take the comments of your peers with respect.
+And please remember that this is a respectful area. Review and take the comments of your peers with respect.
 
 ### Contributing
 
