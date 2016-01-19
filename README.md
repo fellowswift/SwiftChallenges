@@ -11,9 +11,9 @@ And please remember that this is a respectful team. Review and take the comments
 
 ### Contributing
 
-Do you have a nice problem that you would like to propose for the challenge?
-Do you have any doubt about the process?
-Anything else you would like to share with us... ?
+Do you have a nice problem that you would like to propose for the challenge?     
+Do you have any doubt about the process?      
+Anything else you would like to share with us?     
 
 Please contact us, we are really looking forward your comments.
 
