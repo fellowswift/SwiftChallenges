@@ -18,9 +18,13 @@ Output the maximum cycle length found in the range defined by the input values i
 */
 
 
-func challenge_1(i: Int, j: Int) -> Int {
+func challenge_0001(i: Int, _ j: Int) -> Int {
     
     <#Write here your solution#>
     
 }
 
+//assert(challenge_0001(1, 20) == 20)
+//assert(challenge_0001(100, 200) == 125)
+//assert(challenge_0001(201, 210) == 89)
+//assert(challenge_0001(900, 1000) == 174)
