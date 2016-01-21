@@ -5,6 +5,8 @@ Welcome this challenging playground for those who love coding. Inspired by [prog
 
 Periodically a programming challenge will be published in this repo as a pending issue. You should fork this repository and send a pull request as your solution to the issue. We will do peer-review by commenting others' solutions. We will learn and teach all together.
 
+Please avoid the urge to read other's solutions before implementing your. Try to solve the challenges in your own first and compare it with your collagues afterwards. In case of suspecting (too similiar ideas) we will discard the second one.
+
 Please remember that you should not make any assumption in the challenges. Your solution should deal with negative numbers, decimals, wrong inputs, etc... unless it is indicated like that in the problem. In case of doubt please send a comment to the corresponding issue.
 
 And please remember that this is a respectful area. Review and take the comments of your peers with respect.
