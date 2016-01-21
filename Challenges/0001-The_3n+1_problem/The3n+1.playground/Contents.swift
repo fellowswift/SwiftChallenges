@@ -14,19 +14,7 @@ For an input n, the cycle-length of n is the number of numbers generated up to a
 The input will consist in a couple of integers. All of them will be less than 1,000,000 and greater than 0.
 
 ## Output
-For each pair of input integers i and j, output i, j in the same order in which they appeared in the input and then the maximum cycle length for integers between and including i and j. These three numbers should be separated by one space, with all three numbers on one line and with one line of output for each line of input.
-
-## Sample Inputs
-    1 10
-    100 200
-    201 210
-    900 1000
-
-## Sample Outputs
-    1 10 20
-    100 200 125
-    201 210 89
-    900 1000 174    
+Output the maximum cycle length found in the range defined by the input values i and j.
 */
 
 
