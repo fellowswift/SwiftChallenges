@@ -17,14 +17,44 @@ The input will consist in a couple of integers. All of them will be less than 1,
 Output the maximum cycle length found in the range defined by the input values i and j.
 */
 
-
-func challenge_0001(i: Int, _ j: Int) -> Int {
-    
-    <#Write here your solution#>
-    
+extension Int {
+    func isOdd() -> Bool {
+        return self % 2 != 0
+    }
 }
 
-//assert(challenge_0001(1, 20) == 20)
-//assert(challenge_0001(100, 200) == 125)
-//assert(challenge_0001(201, 210) == 89)
-//assert(challenge_0001(900, 1000) == 174)
+func getCycleLength(number: Int) -> Int {
+    if number == 1 {
+        return 1
+    }
+
+    if number.isOdd() {
+        return 1 + getCycleLength(number * 3 + 1);
+    }
+    else {
+        return 1 + getCycleLength(number / 2);
+    }
+}
+
+func challenge_0001(var i: Int, var _ j: Int) -> Int {
+    
+    if i > j { (i, j) = (j, i) }
+    
+    var maxCycleLength = 0
+    for currentNumber in i...j {
+        let cycleLength = getCycleLength(currentNumber)
+        if cycleLength > maxCycleLength {
+            maxCycleLength = cycleLength
+        }
+    }
+    return maxCycleLength
+}
+
+assert(challenge_0001(1, 10) == 20)
+assert(challenge_0001(10, 1) == 20)
+assert(challenge_0001(100, 200) == 125)
+assert(challenge_0001(200, 100) == 125)
+assert(challenge_0001(201, 210) == 89)
+assert(challenge_0001(210, 201) == 89)
+assert(challenge_0001(900, 1000) == 174)
+assert(challenge_0001(1000, 900) == 174)
