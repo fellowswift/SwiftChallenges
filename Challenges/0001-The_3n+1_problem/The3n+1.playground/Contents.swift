@@ -24,7 +24,7 @@ func challenge_0001(i: Int, _ j: Int) -> Int {
     
 }
 
-//assert(challenge_0001(1, 20) == 20)
+//assert(challenge_0001(1, 10) == 20)
 //assert(challenge_0001(100, 200) == 125)
 //assert(challenge_0001(201, 210) == 89)
 //assert(challenge_0001(900, 1000) == 174)
