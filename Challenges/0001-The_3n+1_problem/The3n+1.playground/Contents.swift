@@ -22,7 +22,7 @@ func challenge_0001(i: Int, _ j: Int) -> Int {
     
     func collatzCycles(n: Int) -> Int {
         if n == 1 { return 1 }
-        else { return n%2==0 ? 1 + collatzCycles(n>>1) : 1 + collatzCycles(3*n+1) }
+        return n%2==0 ? 1 + collatzCycles(n>>1) : 1 + collatzCycles(3*n+1)
     }
     
     return (i...j).map(collatzCycles).maxElement()!
