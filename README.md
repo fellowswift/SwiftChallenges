@@ -11,6 +11,10 @@ Please remember that you should not make any assumption in the challenges. Your 
 
 And please remember that this is a respectful area. Review and take the comments of your peers with respect.
 
+### Challenges
+
+· [Challenge 0001: The 3n+1 problem](https://github.com/fellowswift/SwiftChallenges/issues/1)
+
 ### Contributing
 
 Do you have a nice problem that you would like to propose for the challenge?     
