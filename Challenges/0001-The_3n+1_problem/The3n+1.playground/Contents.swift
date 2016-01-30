@@ -17,14 +17,35 @@ The input will consist in a couple of integers. All of them will be less than 1,
 Output the maximum cycle length found in the range defined by the input values i and j.
 */
 
+// naive implementation, a lot of cycle-endings are calculated over and over again
 
 func challenge_0001(i: Int, _ j: Int) -> Int {
-    
-    <#Write here your solution#>
-    
+	precondition(i<=j)
+    return Array((i...j)).map(cycleLength).maxElement()!
 }
 
-//assert(challenge_0001(1, 10) == 20)
-//assert(challenge_0001(100, 200) == 125)
-//assert(challenge_0001(201, 210) == 89)
-//assert(challenge_0001(900, 1000) == 174)
+func cycleLength(n: Int) -> Int {
+	return cycle(n).count
+}
+
+func cycle(n: Int) -> [Int] {
+	if n==1 {
+		return [n]
+	}
+	
+	return [n] + cycle(nextInCycle(n))
+}
+
+func nextInCycle(n: Int) -> Int {
+	if n % 2 == 0 {
+		return n / 2
+	}
+	else {
+		return n * 3 + 1
+	}
+}
+
+assert(challenge_0001(1, 10) == 20)
+assert(challenge_0001(100, 200) == 125)
+assert(challenge_0001(201, 210) == 89)
+assert(challenge_0001(900, 1000) == 174)
