@@ -17,14 +17,61 @@ The input will consist in a couple of integers. All of them will be less than 1,
 Output the maximum cycle length found in the range defined by the input values i and j.
 */
 
+// ugly but more efficient implementation, avoid recalculating duplicate ending sequences
+
+typealias numberN = Int
+typealias sequenceCount = Int
+typealias SequenceCountDict = Dictionary<numberN, sequenceCount>
+
 
 func challenge_0001(i: Int, _ j: Int) -> Int {
-    
-    <#Write here your solution#>
-    
+	precondition(i<=j)
+	precondition(i>0)
+	
+	let numbers = Array(i...j)
+	var dict = SequenceCountDict()
+	var maxLength = 0
+	for n in numbers {
+		var sequence = [Int]()
+		var m = n
+		while true {
+			sequence.append(m)
+			
+			if m == 1 {
+				dict[m] = 1
+			}
+			
+			if let existingCount = dict[m] {
+				var count = existingCount
+				// go backwards and update count dict
+				for i in sequence.dropLast().reverse() {
+					count += 1
+					dict[i] = count
+				}
+				maxLength = max(maxLength, count)
+				
+				break
+			}
+			
+			m = nextInCycle(m)
+		}
+	}
+	
+	return maxLength
 }
 
-//assert(challenge_0001(1, 10) == 20)
-//assert(challenge_0001(100, 200) == 125)
-//assert(challenge_0001(201, 210) == 89)
-//assert(challenge_0001(900, 1000) == 174)
+func nextInCycle(n: Int) -> Int {
+	precondition(n>0)
+
+	if n % 2 == 0 {
+		return n / 2
+	}
+	else {
+		return n * 3 + 1
+	}
+}
+
+assert(challenge_0001(1, 10) == 20)
+assert(challenge_0001(100, 200) == 125)
+assert(challenge_0001(201, 210) == 89)
+assert(challenge_0001(900, 1000) == 174)
