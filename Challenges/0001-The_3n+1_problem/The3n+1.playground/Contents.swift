@@ -19,9 +19,116 @@ Output the maximum cycle length found in the range defined by the input values i
 
 
 func challenge_0001(i: Int, _ j: Int) -> Int {
+  
+/*:
+
+  Just in case...
+
+*/
+  
+  precondition( 0 < i)
+  precondition( i < j)
+  precondition( j < 1_000_000)
+  
+/*:
+
+  Wouldn't be great something like...
+  precondition( 0 < i < j < 1_000_000)
+
+*/
+  
+  var currentNumber = i
+  
+/*:
+
+  This is the returned value
+
+*/
+  
+  var maxLengthCycle = 0
+  
+/*:
+
+  Saves [number: count of the series for that number 'til 1]
+  Ex: challenge(1, 10) -> [1: 0, 2: 1, 4: 2]
+  If I found a number here it means it's a repeated cycle and I can't stop looking forward
+
+*/
+  
+  var duples: [Int: Int] = [:]
+  
+/*:
+
+  Current requirements for next value
+
+*/
+
+  let nextNumberInCycle: (Int) -> Int = { number -> Int in
+    if number % 2 == 0 {
+      return number / 2
+    } else {
+      return (number * 3) + 1
+    }
+  }
+  
+  mainLoop: repeat {
     
-    <#Write here your solution#>
+    var cycle: [Int] = [currentNumber]
+    var cycleNumber = currentNumber
     
+    repeat {
+      if var sum = duples[cycleNumber] { // repeted cycle found
+        maxLengthCycle = [maxLengthCycle, cycle.count + sum].maxElement()!
+        
+/*:
+
+        Fulfilling the whole cycle into duples
+
+*/
+        
+        cycle.reverse().forEach {
+          duples[$0] = sum
+          sum += 1
+        }
+        
+/*:
+
+        Neeeeext !!
+
+*/
+        
+        currentNumber += 1
+        continue mainLoop
+      }
+      
+      cycleNumber = nextNumberInCycle(cycleNumber)
+      cycle.append(cycleNumber)
+      
+    } while cycleNumber > 1
+    
+/*:
+    
+    Looking for a winner
+    
+*/
+    
+    maxLengthCycle = [maxLengthCycle, cycle.count].maxElement()!
+
+/*:
+
+    Cycles to duples
+
+*/
+
+    for (index, val) in cycle.enumerate() {
+      duples[val] = cycle.count - (index + 1)
+    }
+    
+    currentNumber += 1
+  } while currentNumber <= j
+  
+  return maxLengthCycle
+  
 }
 
 //assert(challenge_0001(1, 10) == 20)
