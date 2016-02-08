@@ -21,8 +21,8 @@ And please remember that this is a respectful area. Review and take the comments
 |-----------|:----------------------------------------------:|---------------------:|
 | 1         | 🇦🇹 [@fabb](https://github.com/fabb)              | 1 Challenge solved   |
 | 2         | 🇪🇸 [@raulmpad](https://github.com/raulmpad)      | 1 Challenge solved   |
-| 3         | 🇵🇹 🇵���  [@phelgo](https://github.com/phelgo) *        | 1 Challenge solved   |
-| 4         | 🇪🇸 🇪���  [@dcordero](https://github.com/dcordero) *    | 1 Challenge solved   |
+| 3         | 🇵🇹 [@phelgo](https://github.com/phelgo) *        | 1 Challenge solved   |
+| 4         | 🇪🇸 [@dcordero](https://github.com/dcordero) *    | 1 Challenge solved   |
 
 \* Organisers, don’t trust their numbers, they are probably cheating \o/
 
