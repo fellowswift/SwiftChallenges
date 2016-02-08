@@ -15,6 +15,15 @@ And please remember that this is a respectful area. Review and take the comments
 
 · [Challenge 0001: The 3n+1 problem](https://github.com/fellowswift/SwiftChallenges/issues/1)
 
+### Challenges awards
+
+| Position  |      Username                                  |  Challenges solved   |
+|-----------|:----------------------------------------------:|---------------------:|
+| 1         |  [@fabb](https://github.com/fabb)              | 1 Challenge solved   |
+| 2         |  [@raulmpad](https://github.com/raulmpad)      | 1 Challenge solved   |
+| 3         |  [@phelgo](https://github.com/phelgo)          | 1 Challenge solved   |
+| 4         |  [@dcordero](https://github.com/dcordero)      | 1 Challenge solved   |
+
 ### Contributing
 
 Do you have a nice problem that you would like to propose for the challenge?     
@@ -22,15 +31,3 @@ Do you have any doubt about the process?
 Anything else you would like to share with us?     
 
 Please contact us, we are really looking forward your comments.
-
-<!---
-### Challenges awards
-
-// Template for the future:
-
-| Position  |      Username                                  |  Challenges solved   |
-|-----------|:----------------------------------------------:|---------------------:|
-| 1         |  [@phelgo](https://github.com/phelgo)          | 20 Challenges solved |
-| 2         |  [@dcordero](https://github.com/dcordero)      | 15 Challenges solved |
-
--->
