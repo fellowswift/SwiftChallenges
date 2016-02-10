@@ -28,3 +28,7 @@ func challenge_0001(i: Int, _ j: Int) -> Int {
 //assert(challenge_0001(100, 200) == 125)
 //assert(challenge_0001(201, 210) == 89)
 //assert(challenge_0001(900, 1000) == 174)
+
+/*:
+This problem appeared originally in programming-challenges.com
+*/
