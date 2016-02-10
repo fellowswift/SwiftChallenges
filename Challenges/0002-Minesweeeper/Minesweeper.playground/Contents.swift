@@ -63,3 +63,7 @@ assert(result_2[0] == ["*", "*", "1", "0", "0"])
 assert(result_2[1] == ["3", "3", "2", "0", "0"])
 assert(result_2[2] == ["1", "*", "1", "0", "0"])
 */
+
+/*:
+This problem appeared originally in programming-challenges.com
+*/
