@@ -34,3 +34,9 @@ Anything else you would like to share with us?
 
 Please contact us, we are really looking forward your comments.
 
+### Sources
+
+This is the list of sources from which we got the challenges:
+* [programming-challenges.com](http://www.programming-challenges.com)
+
+
