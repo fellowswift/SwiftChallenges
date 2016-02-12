@@ -14,6 +14,7 @@ And please remember that this is a respectful area. Review and take the comments
 ### Challenges
 
 · [Challenge 0001: The 3n+1 problem](https://github.com/fellowswift/SwiftChallenges/issues/1)
+· [Challenge 0002: Minesweeper](https://github.com/fellowswift/SwiftChallenges/issues/9)
 
 ### Challenges awards
 
