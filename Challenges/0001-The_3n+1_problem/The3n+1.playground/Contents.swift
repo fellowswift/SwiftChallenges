@@ -20,11 +20,15 @@ Output the maximum cycle length found in the range defined by the input values i
 
 func challenge_0001(i: Int, _ j: Int) -> Int {
     
-    <#Write here your solution#>
+    func collatzCycles(n: Int) -> Int {
+        if n == 1 { return 1 }
+        return n%2==0 ? 1 + collatzCycles(n/2) : 1 + collatzCycles(3*n+1)
+    }
     
+    return (i...j).map(collatzCycles).maxElement()!
 }
 
-//assert(challenge_0001(1, 10) == 20)
-//assert(challenge_0001(100, 200) == 125)
-//assert(challenge_0001(201, 210) == 89)
-//assert(challenge_0001(900, 1000) == 174)
+assert(challenge_0001(1, 10) == 20)
+assert(challenge_0001(100, 200) == 125)
+assert(challenge_0001(201, 210) == 89)
+assert(challenge_0001(900, 1000) == 174)
